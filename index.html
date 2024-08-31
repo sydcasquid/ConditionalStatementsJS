@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement JavaScript - Assignment</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let numOne = prompt("Enter a first number."); 
+    if (!(isNaN(numOne))) {
+       numOne = parseInt(numOne);
+       let numTwo = prompt("Enter a second number.");
+       if (!(isNaN(numTwo))){
+        numTwo = parseInt(numTwo);
+        let operation = prompt("Lastly, enter the operator: -, +, x or /");
+        if (operation == "-"){
+            result = numOne - numTwo
+            alert(numOne + " - " + numTwo + " = " + result);
+
+        }else if (operation == "+"){
+            result = numOne + numTwo
+            alert(numOne + " + " + numTwo + " = " + result);
+
+        }else if (operation == "x"){
+            result = numOne * numTwo
+            alert(numOne + " x " + numTwo + " = " + result);
+
+        }else if (operation == "/"){
+            result = numOne / numTwo
+            alert(numOne + " / " + numTwo + " = " + result);
+
+        }else { 
+            alert("That is not an operator.");
+        }
+       }else {
+        alert("That is not a number.");
+       }
+    }else {
+        alert("That is not a number.");
+    };
+    
+
+   
+</script>
+</html>
